@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f5f7fa;
+    color: #333;
+}
+
+
+/* Navigation */
+
+header {
+    background: #222;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: auto;
+    padding: 15px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #00bcd4;
+}
+
+
+/* Home */
+
+.home {
+    min-height: 90vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px;
+}
+
+.home h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.home h1 span {
+    color: #00a8cc;
+}
+
+.home h2 {
+    margin-bottom: 20px;
+}
+
+.home p {
+    max-width: 650px;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+
+/* Button */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    background: #00a8cc;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #007f99;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+
+/* Content */
+
+.content {
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.content p {
+    margin-bottom: 20px;
+}
+
+
+/* Cards */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: white;
+
+    width: 300px;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    margin-bottom: 15px;
+}
+
+
+/* Skills */
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+
+    padding: 15px 25px;
+
+    border-radius: 5px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Contact */
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
+    margin: 10px;
+}
+
+
+/* Footer */
+
+footer {
+    background: #222;
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+}
